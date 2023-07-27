@@ -2,7 +2,7 @@
 
 # feedback-js
 
-[![Build](https://github.com/MonlamIT/feedback-js/workflows/Build/badge.svg)](https://github.com/BetaHuhn/feedback-js/actions?query=workflow%3ABuild) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/feedback-js/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@betahuhn/feedback-js)](https://www.npmjs.com/package/@betahuhn/feedback-js) [![npm bundle size](https://img.badgesize.io/betahuhn/feedback-js/master/dist/feedback-js.min.js?compression=gzip)](https://github.com/BetaHuhn/feedback-js)
+[![Build](https://github.com/MonlamIT/feedback-js/workflows/Build/badge.svg)](https://github.com/MonalmIT/feedback-js/actions?query=workflow%3ABuild) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/MonlamIT/feedback-js/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@MonlamIT/feedback-js)](https://www.npmjs.com/package/@MonlamIT/feedback-js) [![npm bundle size](https://img.badgesize.io/MonlamIT/feedback-js/master/dist/feedback-js.min.js?compression=gzip)](https://github.com/MonlamIT/feedback-js)
 
 Simple feedback modal for any website
 
@@ -28,7 +28,7 @@ Simple feedback modal for any website
 Add this to your HTML page:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@betahuhn/feedback-js/dist/feedback-js.min.js" data-feedback-endpoint="https://your-custom-endpoint"></script>
+<script src="https://cdn.jsdelivr.net/npm/@MonlamIT/feedback-js/dist/feedback-js.min.js" data-feedback-endpoint="https://your-custom-endpoint"></script>
 ```
 
 ### Via NPM
@@ -36,13 +36,13 @@ Add this to your HTML page:
 Install [feedback-js](https://github.com/MonlamIT/feedback-js) using NPM:
 
 ```sh
-npm install @betahuhn/feedback-js
+npm install @MonlamIT/feedback-js
 ```
 
 Then add the following JavaScript code:
 
 ```javascript
-import Feedback from '@betahuhn/feedback-js'
+import Feedback from '@MonlamIT/feedback-js'
 
 new Feedback({ endpoint: 'https://example.com/feedback' }).renderButton()
 ```
@@ -54,7 +54,7 @@ By default [feedback-js](https://github.com/MonalmIT/feedback-js) will add a fee
 There are multiple ways to use [feedback-js](https://github.com/MonalmIT/feedback-js). The easiest is to include the provided script tag in your HTML file and specify the form endpoint with `data-feedback-endpoint`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@betahuhn/feedback-js/dist/feedback-js.min.js" data-feedback-endpoint="https://your-custom-endpoint"></script>
+<script src="https://cdn.jsdelivr.net/npm/@MonlamIT/feedback-js/dist/feedback-js.min.js" data-feedback-endpoint="https://your-custom-endpoint"></script>
 ```
 
 If you want to customize [feedback-js](https://github.com/MonalmIT/feedback-js) further, you can use the `data-feedback-opts` attribute:
@@ -68,7 +68,7 @@ You can add the attributes to any HTML element, not just the `script` tag e.g. `
 You can also set it up manually with JavaScript:
 
 ```javascript
-import Feedback from '@betahuhn/feedback-js'
+import Feedback from '@MonlamIT/feedback-js'
 
 const options = {
     endpoint: 'https://example.com/feedback',
@@ -194,7 +194,7 @@ By default the email field will be hidden, you can enable it with the `emailFiel
 If you want to handle the form submission yourself, you can enable `events` and listen for the `feedback-submit` event:
 
 ```js
-import Feedback from '@betahuhn/feedback-js'
+import Feedback from '@MonlamIT/feedback-js'
 
 const options = {
     events: true
@@ -212,7 +212,7 @@ window.addEventListener('feedback-submit', (event) => {
 By default there are 3 feedback types, general, idea and bug. You can modify their text/icons or even add your own with the `types` option:
 
 ```js
-import Feedback from '@betahuhn/feedback-js'
+import Feedback from '@MonlamIT/feedback-js'
 
 const options = {
     endpoint: 'https://example.com/feedback',
@@ -247,7 +247,7 @@ The actual source code of this library is in the `feedback.js` file in the `src`
 
 ## ❔ About
 
-This library was developed by me ([@betahuhn](https://github.com/MonalmIT)) in my free time. If you want to support me:
+This library was developed by me ([@MonlamIT](https://github.com/MonalmIT)) in my free time. If you want to support me:
 
 [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=394RTSBEEEFEE)
 
