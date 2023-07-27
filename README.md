@@ -2,13 +2,13 @@
 
 # feedback-js
 
-[![Build](https://github.com/BetaHuhn/feedback-js/workflows/Build/badge.svg)](https://github.com/BetaHuhn/feedback-js/actions?query=workflow%3ABuild) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/feedback-js/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@betahuhn/feedback-js)](https://www.npmjs.com/package/@betahuhn/feedback-js) [![npm bundle size](https://img.badgesize.io/betahuhn/feedback-js/master/dist/feedback-js.min.js?compression=gzip)](https://github.com/BetaHuhn/feedback-js)
+[![Build](https://github.com/MonlamIT/feedback-js/workflows/Build/badge.svg)](https://github.com/BetaHuhn/feedback-js/actions?query=workflow%3ABuild) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/feedback-js/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@betahuhn/feedback-js)](https://www.npmjs.com/package/@betahuhn/feedback-js) [![npm bundle size](https://img.badgesize.io/betahuhn/feedback-js/master/dist/feedback-js.min.js?compression=gzip)](https://github.com/BetaHuhn/feedback-js)
 
 Simple feedback modal for any website
 
 ![preview](https://cdn.mxis.ch/assets/feedback-js/preview.gif)
 
-[🔮 Live Demo](https://codepen.io/BetaHuhn/pen/MWebeXp)
+[🔮 Live Demo](https://codepen.io/MonalmIT/pen/MWebeXp)
 <br/>
 
 </div>
@@ -33,7 +33,7 @@ Add this to your HTML page:
 
 ### Via NPM
 
-Install [feedback-js](https://github.com/BetaHuhn/feedback-js) using NPM:
+Install [feedback-js](https://github.com/MonlamIT/feedback-js) using NPM:
 
 ```sh
 npm install @betahuhn/feedback-js
@@ -47,17 +47,17 @@ import Feedback from '@betahuhn/feedback-js'
 new Feedback({ endpoint: 'https://example.com/feedback' }).renderButton()
 ```
 
-By default [feedback-js](https://github.com/BetaHuhn/feedback-js) will add a feedback button to the bottom right corner of your page with the default colors and text. This can be configured using the [options](https://github.com/BetaHuhn/feedback-js#options) object.
+By default [feedback-js](https://github.com/MonalmIT/feedback-js) will add a feedback button to the bottom right corner of your page with the default colors and text. This can be configured using the [options](https://github.com/MonalmIT/feedback-js#options) object.
 
 ## 📚 Setup
 
-There are multiple ways to use [feedback-js](https://github.com/BetaHuhn/feedback-js). The easiest is to include the provided script tag in your HTML file and specify the form endpoint with `data-feedback-endpoint`:
+There are multiple ways to use [feedback-js](https://github.com/MonalmIT/feedback-js). The easiest is to include the provided script tag in your HTML file and specify the form endpoint with `data-feedback-endpoint`:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@betahuhn/feedback-js/dist/feedback-js.min.js" data-feedback-endpoint="https://your-custom-endpoint"></script>
 ```
 
-If you want to customize [feedback-js](https://github.com/BetaHuhn/feedback-js) further, you can use the `data-feedback-opts` attribute:
+If you want to customize [feedback-js](https://github.com/MonalmIT/feedback-js) further, you can use the `data-feedback-opts` attribute:
 
 ```html
 <script data-feedback-opts='{ "endpoint": "http://172.21.52.196:6600/form/feedback", "id": "example", "emailField": true }'></script>
@@ -97,7 +97,7 @@ This will open the modal and the user can give his feedback.
 
 Once the user submits the form, the data will be sent to the specified endpoint. 
 
-You will have to handle the submission on the backend yourself. [feedback-js](https://github.com/BetaHuhn/feedback-js) will make a POST request to your specified endpoint with the following body:
+You will have to handle the submission on the backend yourself. [feedback-js](https://github.com/MonalmIT/feedback-js) will make a POST request to your specified endpoint with the following body:
 
 ```json
 {
@@ -135,7 +135,7 @@ app.listen(port, () => {
 
 ## ⚙️ Options
 
-You can customize [feedback-js](https://github.com/BetaHuhn/feedback-js) by passing a options object to `new Feedback()` or use the `data-feedback-opts` attribute.
+You can customize [feedback-js](https://github.com/MonalmIT/feedback-js) by passing a options object to `new Feedback()` or use the `data-feedback-opts` attribute.
 
 <details>
 <summary>All available options:</summary>
@@ -243,11 +243,11 @@ The actual source code of this library is in the `feedback.js` file in the `src`
 
 - run `yarn lint` or `npm run lint` to run eslint.
 - run `yarn watch` or `npm run watch` to watch for changes and build to the `dist` folder.
-- run `yarn build` or `npm run build` to produce a production version of [feedback-js](https://github.com/BetaHuhn/feedback-js) in the `dist` folder.
+- run `yarn build` or `npm run build` to produce a production version of [feedback-js](https://github.com/MonalmIT/feedback-js) in the `dist` folder.
 
 ## ❔ About
 
-This library was developed by me ([@betahuhn](https://github.com/BetaHuhn)) in my free time. If you want to support me:
+This library was developed by me ([@betahuhn](https://github.com/MonalmIT)) in my free time. If you want to support me:
 
 [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=394RTSBEEEFEE)
 
